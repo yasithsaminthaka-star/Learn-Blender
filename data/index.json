@@ -3,7 +3,8 @@
     "title": "Blender සිංහලෙන් ඉගෙන ගනිමු",
     "manualBase": "https://docs.blender.org/manual/en/latest/",
     "manualLabel": "Blender Manual (5.3) – වැඩිපුර කියවන්න",
-    "footer": "අන්තර්ගතය Blender Manual (CC BY-SA 4.0) පදනම් කරගෙන සකස් කළ අධ්‍යාපනික සම්පතකි – docs.blender.org"
+    "footer": "අන්තර්ගතය Blender Manual (CC BY-SA 4.0) පදනම් කරගෙන සකස් කළ අධ්‍යාපනික සම්පතකි – docs.blender.org",
+    "version": "1.1"
   },
   "modules": [
     "modules/01-interface.json",

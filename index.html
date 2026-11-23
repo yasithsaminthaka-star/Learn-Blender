@@ -44,7 +44,7 @@ td:first-child{white-space:nowrap;font:600 15px ui-monospace,Menlo,monospace;col
 .qz button{display:block;width:100%;text-align:left;margin:6px 0;padding:8px 14px;background:none;border:1px solid var(--ln);border-radius:6px}
 .qz button.r{border-color:var(--ok);background:color-mix(in srgb,var(--ok) 18%,transparent)}
 .qz button.w{border-color:var(--bad);background:color-mix(in srgb,var(--bad) 18%,transparent)}
-.dl{margin:0;padding-left:22px}.dl a{color:var(--ac)}.ft{margin-top:36px;color:var(--mu);font-size:14px}.pg{display:flex;justify-content:space-between;margin-top:32px}
+.dl{margin:0;padding-left:22px}.dl a{color:var(--ac)}.ft{margin-top:36px;color:var(--mu);font-size:14px}.th{border-left:3px solid var(--ac);padding:2px 16px;margin:10px 0;background:var(--pn)}.th h4{margin:6px 0 0;font-size:17px}.th p{margin:2px 0 8px}details.pr{border:1px solid var(--ln);background:var(--pn);margin-bottom:8px;padding:6px 16px}details.pr summary{cursor:pointer;font-weight:600}details.pr ol{padding-left:22px}.pg{display:flex;justify-content:space-between;margin-top:32px}
 .pg button{background:var(--ac);color:#fff;border:0;border-radius:6px;padding:8px 20px;font-weight:600}
 .pg button:disabled{opacity:.35;cursor:default}
 button:focus-visible,input:focus-visible{outline:2px solid var(--ac);outline-offset:2px}
@@ -90,15 +90,18 @@ function nav(){const f=filter.toLowerCase();$("nv").innerHTML="";
   b.innerHTML="<span>"+(i+1)+". "+esc(m.title)+"</span>"+(done(i)?"<em>✓</em>":"");
   b.onclick=()=>{cur=i;location.hash="m"+(i+1);render()};$("nv").appendChild(b)});}
 function render(){const m=M[cur];
- let h="<h2>"+esc(m.title)+"</h2><p class='sum'>"+esc(m.summary)+"</p><h3>ඉගෙන ගත යුතු කරුණු</h3><ul class='st'>";
+ let h="<h2>"+esc(m.title)+"</h2><p class='sum'>"+esc(m.summary)+"</p>";
+ if((m.theory||[]).length)h+="<h3>සිද්ධාන්තය (Theory)</h3>"+m.theory.map(t=>"<div class='th'><h4>"+esc(t.title)+"</h4><p>"+esc(t.text)+"</p></div>").join("");
+ h+="<h3>ඉගෙන ගත යුතු කරුණු</h3><ul class='st'>";
  m.steps.forEach((x,j)=>{const id="c"+cur+"_"+j;h+="<li><input type='checkbox' id='"+id+"' data-j='"+j+"'"+(S[key(cur,j)]?" checked":"")+"><label for='"+id+"'>"+esc(x)+"</label></li>"});
  h+="</ul>";
+ if((m.practical||[]).length)h+="<h3>ප්‍රායෝගික (Practical)</h3>"+m.practical.map((p,i)=>"<details class='pr'"+(i?"":" open")+"><summary>"+esc(p.title)+"</summary><p>🎯 "+esc(p.goal||"")+"</p><ol>"+p.steps.map(x=>"<li>"+esc(x)+"</li>").join("")+"</ol></details>").join("");
  if((m.shortcuts||[]).length)h+="<h3>Shortcuts</h3><table>"+m.shortcuts.map(r=>"<tr><td>"+esc(r.key)+"</td><td>"+esc(r.desc)+"</td></tr>").join("")+"</table>";
  if((m.docs||[]).length)h+="<h3>"+esc(site.manualLabel||"Blender Manual")+"</h3><ul class='dl'>"+m.docs.map(d=>"<li><a href='"+esc((site.manualBase||"")+d.path)+"' target='_blank' rel='noopener'>"+esc(d.title)+"</a></li>").join("")+"</ul>";
  if((m.quiz||[]).length){h+="<h3>ප්‍රශ්න</h3>";
   m.quiz.forEach((q,qi)=>{h+="<div class='qz' data-q='"+qi+"' style='margin-bottom:12px'><p>"+esc(q.q)+"</p>"+q.options.map((o,i)=>"<button data-i='"+i+"'>"+esc(o)+"</button>").join("")+"<small></small></div>"});}
  h+="<div class='pg'><button id='pv'"+(cur?"":" disabled")+">← කලින්</button><button id='nx'"+(cur<M.length-1?"":" disabled")+">ඊළඟ →</button></div>";
- if(site.footer)h+="<p class='ft'>"+esc(site.footer)+"</p>";
+ if(site.footer)h+="<p class='ft'>"+esc(site.footer)+(site.version?" · v"+esc(site.version):"")+"</p>";
  $("mn").innerHTML=h;
  $("mn").querySelectorAll(".st input").forEach(c=>c.onchange=()=>{S[key(cur,c.dataset.j)]=c.checked;save();prog();nav()});
  $("mn").querySelectorAll(".qz").forEach(box=>{const q=m.quiz[+box.dataset.q];

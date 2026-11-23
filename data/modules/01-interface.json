@@ -1,13 +1,17 @@
 {
   "id": "interface",
   "title": "Interface හැඳින්වීම",
-  "summary": "Blender විවෘත කළ විට පෙනෙන කොටස් හඳුනා ගැනීම.",
+  "summary": "Blender interface එකේ සිද්ධාන්තය (theory) සහ ප්‍රායෝගික (practical) පුහුණුව: Areas, Editors, Workspaces, Properties, Preferences.",
   "steps": [
     "3D Viewport – model එක බලා වැඩ කරන ප්‍රධාන කොටස",
     "Outliner – scene එකේ objects ලැයිස්තුව සහ collections",
     "Properties Editor – Object, Modifier, Material, Render settings",
     "Timeline – animation frames පාලනය කරන තැන",
-    "Workspaces (Layout, Modeling, Sculpting, Shading…) මාරු කිරීම"
+    "Workspaces (Layout, Modeling, Sculpting, Shading…) මාරු කිරීම",
+    "Area split/join කිරීම සහ Editor Type වෙනස් කිරීම",
+    "Properties Editor tabs හඳුනා ගැනීම",
+    "Adjust Last Operation panel සහ Undo History භාවිතය",
+    "Edit → Preferences (Input, Interface, Save & Load) සකස් කිරීම"
   ],
   "shortcuts": [
     {
@@ -71,6 +75,46 @@
     {
       "title": "Outliner",
       "path": "editors/outliner/index.html"
+    },
+    {
+      "title": "Areas",
+      "path": "interface/window_system/areas.html"
+    },
+    {
+      "title": "Tabs & Panels",
+      "path": "interface/window_system/tabs_panels.html"
+    },
+    {
+      "title": "Topbar",
+      "path": "interface/window_system/topbar.html"
+    },
+    {
+      "title": "Status Bar",
+      "path": "interface/window_system/status_bar.html"
+    },
+    {
+      "title": "Properties Editor",
+      "path": "editors/properties_editor.html"
+    },
+    {
+      "title": "Tools & Operators",
+      "path": "interface/tools_operators.html"
+    },
+    {
+      "title": "Undo & Redo",
+      "path": "interface/undo_redo.html"
+    },
+    {
+      "title": "Preferences",
+      "path": "editors/preferences/index.html"
+    },
+    {
+      "title": "Keymap",
+      "path": "interface/keymap/index.html"
+    },
+    {
+      "title": "Data-Block Menu",
+      "path": "interface/controls/templates/data_block.html"
     }
   ],
   "quiz": [
@@ -82,6 +126,140 @@
         "Shader Editor"
       ],
       "answer": 1
+    },
+    {
+      "q": "Editor වර්ගය (Editor Type) වෙනස් කරන්නේ කොතැනින්ද?",
+      "options": [
+        "Area එකේ header වම් කෙළවරේ මෙනුවෙන්",
+        "Status Bar එකෙන්",
+        "Timeline එකෙන්"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Workspace එකක් යනු?",
+      "options": [
+        "Render settings ගොනුවක්",
+        "නිශ්චිත කාර්යයකට සකසා ඇති Area layout එකක්",
+        "Material වර්ගයක්"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Operator එකක් ක්‍රියාත්මක කළ පසු එහි settings වෙනස් කරන panel එක?",
+      "options": [
+        "Adjust Last Operation",
+        "Outliner",
+        "Dope Sheet"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Middle mouse button නැති laptop එකක navigate කිරීමට සක්‍රීය කළ යුත්තේ?",
+      "options": [
+        "Auto Save",
+        "Emulate 3 Button Mouse",
+        "Resolution Scale"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Properties Editor හි tabs වෙනස් වන්නේ කුමන පදනමකින්ද?",
+      "options": [
+        "සෑම විටම එකම",
+        "Render කළ පසු",
+        "තෝරාගත් object එකේ වර්ගය අනුව"
+      ],
+      "answer": 2
+    }
+  ],
+  "theory": [
+    {
+      "title": "Window System: Window → Area → Region",
+      "text": "Blender window එක Areas වලට බෙදා ඇත. සෑම Area එකකම Editor එකක් (3D Viewport, Outliner, Timeline…) ඇත. Area එකක් තව Regions වලින් සමන්විත වේ: Header, Toolbar (T), Sidebar (N) සහ ප්‍රධාන කොටස. Area එකේ වම් ඉහළ කෙළවරේ ඇති Editor Type මෙනුවෙන් editor එක වෙනස් කළ හැක."
+    },
+    {
+      "title": "Workspaces",
+      "text": "Workspace යනු නිශ්චිත කාර්යයකට (Modeling, Sculpting, UV Editing, Shading, Animation, Compositing, Geometry Nodes…) සකසා ඇති Area layout එකකි. Topbar හි tabs මගින් මාරු වන අතර, ඔබට ඔබේම workspace එකක් සෑදිය හැක."
+    },
+    {
+      "title": "Topbar සහ Status Bar",
+      "text": "Topbar හි File, Edit, Render, Window, Help මෙනු, Workspace tabs සහ Scene / View Layer තේරීම ඇත. පහළ Status Bar හි දැනට භාවිතා කළ හැකි mouse/key හැසිරීම්, scene statistics සහ Blender version පෙන්වයි."
+    },
+    {
+      "title": "ප්‍රධාන Editors",
+      "text": "3D Viewport (model බැලීම/සැකසීම), Outliner (objects ලැයිස්තුව), Properties Editor (settings), Timeline / Dope Sheet / Graph Editor (animation), Shader Editor / Geometry Node Editor (nodes), UV Editor / Image Editor (texture), Spreadsheet (data පරීක්ෂාව), File Browser / Asset Browser (ගොනු හා assets)."
+    },
+    {
+      "title": "Properties Editor Tabs",
+      "text": "Properties Editor හි tabs (Tool, Render, Output, View Layer, Scene, World, Object, Modifiers, Physics, Constraints, Data, Material…) තෝරාගත් object එකේ වර්ගය අනුව වෙනස් වේ. පැනල් (Panels) ඇදීමෙන් ස්ථාන මාරු කිරීමට හෝ collapse කිරීමට හැක."
+    },
+    {
+      "title": "Tools, Operators සහ Undo",
+      "text": "Toolbar හි Active Tool එක viewport හි ක්‍රියාත්මක වේ. මෙනුවකින් හෝ key එකකින් ක්‍රියාත්මක කරන විධානයක් Operator එකකි; ඉන්පසු පහළ වම් කෙළවරේ 'Adjust Last Operation' panel එකෙන් (F9) එහි settings වෙනස් කළ හැක. Ctrl+Z / Ctrl+Shift+Z සහ Edit → Undo History මගින් පියවර ආපසු යා හැක."
+    },
+    {
+      "title": "Mouse සහ Keymap",
+      "text": "Default keymap හි Left Click = Select, Right Click = Context menu, Middle Mouse = Navigate. Pie menus (උදා: Z, Shift+S) වේගවත් තේරීම් ලබා දෙයි. Keymap වෙනස් කළ හැක (Preferences → Keymap)."
+    },
+    {
+      "title": "Data-blocks සහ ගොනු",
+      "text": "Blender හි Objects, Meshes, Materials, Textures, Images සියල්ල Data-blocks වේ. Data-Block මෙනුවෙන් නව එකක් සෑදීම, unlink කිරීම සහ Fake User (⛨) දැමීම කළ හැක; භාවිතයක් නැති data-blocks ගොනුව save කිරීමේදී ඉවත් වේ. ගොනුව .blend ලෙස Ctrl+S මගින් save කරන්න."
+    }
+  ],
+  "practical": [
+    {
+      "title": "පුහුණුව 1: Areas බෙදීම සහ Workspace එකක් සෑදීම",
+      "goal": "ඔබේම layout එකක් සාදා Startup File ලෙස save කිරීම.",
+      "steps": [
+        "Area දෙකක් අතර මායිම මත Right Click → Vertical Split / Horizontal Split තෝරන්න",
+        "අලුත් Area එකේ Editor Type මෙනුවෙන් Outliner හෝ Shader Editor තෝරන්න",
+        "Area එකක් මත mouse තබා Ctrl+Space ඔබා maximize කර නැවත ඔබා restore කරන්න",
+        "Workspace tabs අසල + ඔබා Duplicate Current තෝරා නම වෙනස් කරන්න",
+        "File → Defaults → Save Startup File මගින් layout එක පෙරනිමිය කරන්න"
+      ]
+    },
+    {
+      "title": "පුහුණුව 2: Viewport, Outliner සහ Properties එකට භාවිතය",
+      "goal": "Object එකක් සාදා නම් කර collection එකක් යටතේ සංවිධානය කිරීම.",
+      "steps": [
+        "Shift+A → Mesh → Cube මගින් object එකක් එක් කරන්න",
+        "F2 ඔබා නම වෙනස් කරන්න (උදා: Box)",
+        "N ඔබා Sidebar හි Item tab හි Location/Rotation/Scale අගයන් වෙනස් කරන්න",
+        "Properties Editor → Object tab හි Transform අගයන් එම අගයන්ම දැයි පරීක්ෂා කරන්න",
+        "Outliner හි Scene Collection මත Right Click → New Collection; පසුව M ඔබා Box එක එයට ගෙන යන්න"
+      ]
+    },
+    {
+      "title": "පුහුණුව 3: Operator Panel සහ Undo History",
+      "goal": "Object එකක් සෑදූ පසු එහි settings පසුව වෙනස් කිරීම.",
+      "steps": [
+        "Shift+A → Mesh → UV Sphere එක් කරන්න",
+        "පහළ වම් 'Add UV Sphere' panel විවෘත කර Segments = 64, Rings = 32 කරන්න (F9 ද භාවිතා කළ හැක)",
+        "තවත් objects 2ක් එක් කර Edit → Undo History විවෘත කරන්න",
+        "Undo History හි කලින් පියවරක් ක්ලික් කර ආපසු යන්න; Ctrl+Shift+Z මගින් නැවත ඉදිරියට යන්න"
+      ]
+    },
+    {
+      "title": "පුහුණුව 4: Viewport Display පාලනය",
+      "goal": "Shading, Overlays සහ Gizmos හඳුනා ගැනීම.",
+      "steps": [
+        "Viewport ඉහළ දකුණේ Wireframe / Solid / Material Preview / Rendered බොත්තම් එකින් එක උත්සාහ කරන්න",
+        "Z ඔබා Shading pie menu එක භාවිතා කරන්න",
+        "Overlays dropdown එකෙන් Statistics සක්‍රීය කර vertices/faces ගණන බලන්න",
+        "Gizmos dropdown එකෙන් Navigation Gizmo සඟවා නැවත පෙන්වන්න"
+      ]
+    },
+    {
+      "title": "පුහුණුව 5: Preferences සකස් කිරීම",
+      "goal": "ඔබේ පරිගණකයට/laptop එකට Blender ගැලපීම.",
+      "steps": [
+        "Edit → Preferences විවෘත කරන්න",
+        "Input → Mouse හි Emulate 3 Button Mouse සක්‍රීය කරන්න (Middle button නැති laptop සඳහා: Alt+Left Click)",
+        "Interface → Display හි Resolution Scale වෙනස් කර UI ප්‍රමාණය සකසන්න",
+        "Save & Load හි Auto Save සක්‍රීය කර Timer (විනාඩි) සකසන්න",
+        "Themes tab හි වර්ණ බලන්න; Preferences auto-save වන බව සටහන් කරගන්න"
+      ]
     }
   ]
 }
