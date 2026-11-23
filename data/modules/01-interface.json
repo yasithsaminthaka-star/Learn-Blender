@@ -1,0 +1,59 @@
+{
+  "id": "interface",
+  "title": "Interface හැඳින්වීම",
+  "summary": "Blender විවෘත කළ විට පෙනෙන කොටස් හඳුනා ගැනීම.",
+  "steps": [
+    "3D Viewport – model එක බලා වැඩ කරන ප්‍රධාන කොටස",
+    "Outliner – scene එකේ objects ලැයිස්තුව සහ collections",
+    "Properties Editor – Object, Modifier, Material, Render settings",
+    "Timeline – animation frames පාලනය කරන තැන",
+    "Workspaces (Layout, Modeling, Sculpting, Shading…) මාරු කිරීම"
+  ],
+  "shortcuts": [
+    {
+      "key": "N",
+      "desc": "Sidebar පෙන්වන්න/සඟවන්න"
+    },
+    {
+      "key": "T",
+      "desc": "Toolbar පෙන්වන්න/සඟවන්න"
+    },
+    {
+      "key": "Ctrl+Space",
+      "desc": "Area එක maximize කරන්න"
+    },
+    {
+      "key": "Ctrl+S",
+      "desc": "Save කරන්න"
+    }
+  ],
+  "docs": [
+    {
+      "title": "User Interface",
+      "path": "interface/index.html"
+    },
+    {
+      "title": "Workspaces",
+      "path": "interface/window_system/workspaces.html"
+    },
+    {
+      "title": "3D Viewport",
+      "path": "editors/3dview/index.html"
+    },
+    {
+      "title": "Outliner",
+      "path": "editors/outliner/index.html"
+    }
+  ],
+  "quiz": [
+    {
+      "q": "Scene එකේ objects ලැයිස්තුව පෙන්වන්නේ කුමන editor එකෙන්ද?",
+      "options": [
+        "Timeline",
+        "Outliner",
+        "Shader Editor"
+      ],
+      "answer": 1
+    }
+  ]
+}

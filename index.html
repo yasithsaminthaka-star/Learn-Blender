@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blender ඉගෙනීම – සිංහලෙන්</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#1b1c20;--pn:#26282e;--ln:#3a3d46;--tx:#eceef2;--mu:#a3a8b5;--ac:#ea7600;--ok:#4cc38a;--bad:#ef6461}
+@media (prefers-color-scheme:light){:root:not([data-t="d"]){--bg:#f4f5f7;--pn:#fff;--ln:#d9dce3;--tx:#1d2027;--mu:#5d6472;--ac:#c85f00;--ok:#1b8a55;--bad:#c93a37}}
+:root[data-t="l"]{--bg:#f4f5f7;--pn:#fff;--ln:#d9dce3;--tx:#1d2027;--mu:#5d6472;--ac:#c85f00;--ok:#1b8a55;--bad:#c93a37}
+*{box-sizing:border-box}
+html{height:100%}
+body{margin:0;min-height:100%;background:var(--bg);color:var(--tx);font:400 17px/1.9 "Noto Sans Sinhala",system-ui,sans-serif}
+header{padding:20px 24px;border-bottom:1px solid var(--ln);display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+header h1{margin:0;font-size:24px;font-weight:800;flex:1 1 260px}
+header h1 span{color:var(--ac)}
+.bar{flex:1 1 200px;max-width:320px}
+.bar div{height:8px;background:var(--ln);border-radius:4px;overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:var(--ac);transition:width .3s}
+.bar small{color:var(--mu);font-size:14px}
+button{font:inherit;cursor:pointer;color:var(--tx)}
+.tg{background:none;border:1px solid var(--ln);border-radius:6px;padding:2px 12px}
+.wrap{display:grid;grid-template-columns:300px 1fr;max-width:1180px;margin:0 auto}
+nav{padding:16px;border-right:1px solid var(--ln)}
+nav input{width:100%;padding:8px 12px;margin-bottom:12px;background:var(--pn);border:1px solid var(--ln);border-radius:6px;color:var(--tx);font:inherit;font-size:15px}
+nav button{display:flex;gap:8px;width:100%;text-align:left;background:none;border:0;border-left:3px solid transparent;padding:8px 12px;font-size:15px;line-height:1.6}
+nav button:hover{background:var(--pn)}
+nav button.on{border-left-color:var(--ac);background:var(--pn);font-weight:600}
+nav button em{font-style:normal;color:var(--ok);margin-left:auto}
+main{padding:28px 32px 60px;min-width:0}
+main h2{font-size:28px;margin:0 0 4px;line-height:1.5}
+.sum{color:var(--mu);margin:0 0 24px}
+h3{font-size:18px;margin:28px 0 8px}
+.st{list-style:none;padding:0;margin:0}
+.st li{display:flex;gap:12px;padding:10px 14px;border:1px solid var(--ln);background:var(--pn);margin-bottom:-1px}
+.st input{margin-top:9px;accent-color:var(--ac);width:18px;height:18px;flex:none}
+table{border-collapse:collapse;width:100%;background:var(--pn)}
+td{border:1px solid var(--ln);padding:6px 14px}
+td:first-child{white-space:nowrap;font:600 15px ui-monospace,Menlo,monospace;color:var(--ac);width:1%}
+.qz{border:1px solid var(--ln);background:var(--pn);padding:16px 20px}
+.qz p{margin:0 0 8px;font-weight:600}
+.qz button{display:block;width:100%;text-align:left;margin:6px 0;padding:8px 14px;background:none;border:1px solid var(--ln);border-radius:6px}
+.qz button.r{border-color:var(--ok);background:color-mix(in srgb,var(--ok) 18%,transparent)}
+.qz button.w{border-color:var(--bad);background:color-mix(in srgb,var(--bad) 18%,transparent)}
+.dl{margin:0;padding-left:22px}.dl a{color:var(--ac)}.ft{margin-top:36px;color:var(--mu);font-size:14px}.pg{display:flex;justify-content:space-between;margin-top:32px}
+.pg button{background:var(--ac);color:#fff;border:0;border-radius:6px;padding:8px 20px;font-weight:600}
+.pg button:disabled{opacity:.35;cursor:default}
+button:focus-visible,input:focus-visible{outline:2px solid var(--ac);outline-offset:2px}
+@media(max-width:760px){.wrap{grid-template-columns:1fr}nav{border-right:0;border-bottom:1px solid var(--ln)}main{padding:20px 16px 48px}}
+</style>
+</head>
+<body>
+<header>
+  <h1>Blender <span>සිංහලෙන්</span> ඉගෙන ගනිමු</h1>
+  <div class="bar"><div><i id="pb"></i></div><small id="pt"></small></div>
+  <button class="tg" id="th" aria-label="Theme">◐</button>
+</header>
+<div class="wrap">
+  <nav><input id="q" placeholder="සොයන්න… (උදා: UV, Extrude)" aria-label="Search"><div id="nv"></div></nav>
+  <main id="mn"></main>
+</div>
+<script>
+/* අන්තර්ගතය data/ ෆෝල්ඩරයේ JSON ගොනු වලින් load වේ: data/index.json → data/modules/*.json */
+const $=id=>document.getElementById(id);
+const esc=t=>String(t).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+let M=[],site={},cur=0,filter="",S={};
+try{S=JSON.parse(localStorage.getItem("blsi2")||"{}")}catch(e){}
+const save=()=>{try{localStorage.setItem("blsi2",JSON.stringify(S))}catch(e){}};
+const key=(i,j)=>M[i].id+"."+j;
+const done=i=>M[i].steps.every((_,j)=>S[key(i,j)]);
+async function getJSON(p){const r=await fetch(p);if(!r.ok)throw new Error(p+" ("+r.status+")");return r.json()}
+async function init(){
+ try{
+  const idx=await getJSON("data/index.json");site=idx.site||{};
+  M=await Promise.all(idx.modules.map(f=>getJSON("data/"+f)));
+  if(site.title){document.title=site.title;}
+  const h=parseInt((location.hash||"").slice(2));if(h>0&&h<=M.length)cur=h-1;
+  render();
+ }catch(e){
+  $("mn").innerHTML="<h2>අන්තර්ගතය load කළ නොහැක</h2><p class='sum'>"+esc(e.message)+"</p><p>මෙම පිටුව file:// ලෙස විවෘත කර ඇත්නම් JSON load නොවේ. GitHub Pages හෝ local server එකක් (උදා: <code>python -m http.server</code>) භාවිතා කරන්න.</p>";
+ }
+}
+function prog(){let n=0,t=0;M.forEach((m,i)=>m.steps.forEach((_,j)=>{t++;if(S[key(i,j)])n++}));
+ $("pb").style.width=(t?n/t*100:0)+"%";$("pt").textContent="ප්‍රගතිය: "+n+" / "+t+" පියවර";}
+function nav(){const f=filter.toLowerCase();$("nv").innerHTML="";
+ M.forEach((m,i)=>{if(f&&!JSON.stringify(m).toLowerCase().includes(f))return;
+  const b=document.createElement("button");b.className=i===cur?"on":"";
+  b.innerHTML="<span>"+(i+1)+". "+esc(m.title)+"</span>"+(done(i)?"<em>✓</em>":"");
+  b.onclick=()=>{cur=i;location.hash="m"+(i+1);render()};$("nv").appendChild(b)});}
+function render(){const m=M[cur];
+ let h="<h2>"+esc(m.title)+"</h2><p class='sum'>"+esc(m.summary)+"</p><h3>ඉගෙන ගත යුතු කරුණු</h3><ul class='st'>";
+ m.steps.forEach((x,j)=>{const id="c"+cur+"_"+j;h+="<li><input type='checkbox' id='"+id+"' data-j='"+j+"'"+(S[key(cur,j)]?" checked":"")+"><label for='"+id+"'>"+esc(x)+"</label></li>"});
+ h+="</ul>";
+ if((m.shortcuts||[]).length)h+="<h3>Shortcuts</h3><table>"+m.shortcuts.map(r=>"<tr><td>"+esc(r.key)+"</td><td>"+esc(r.desc)+"</td></tr>").join("")+"</table>";
+ if((m.docs||[]).length)h+="<h3>"+esc(site.manualLabel||"Blender Manual")+"</h3><ul class='dl'>"+m.docs.map(d=>"<li><a href='"+esc((site.manualBase||"")+d.path)+"' target='_blank' rel='noopener'>"+esc(d.title)+"</a></li>").join("")+"</ul>";
+ if((m.quiz||[]).length){h+="<h3>ප්‍රශ්න</h3>";
+  m.quiz.forEach((q,qi)=>{h+="<div class='qz' data-q='"+qi+"' style='margin-bottom:12px'><p>"+esc(q.q)+"</p>"+q.options.map((o,i)=>"<button data-i='"+i+"'>"+esc(o)+"</button>").join("")+"<small></small></div>"});}
+ h+="<div class='pg'><button id='pv'"+(cur?"":" disabled")+">← කලින්</button><button id='nx'"+(cur<M.length-1?"":" disabled")+">ඊළඟ →</button></div>";
+ if(site.footer)h+="<p class='ft'>"+esc(site.footer)+"</p>";
+ $("mn").innerHTML=h;
+ $("mn").querySelectorAll(".st input").forEach(c=>c.onchange=()=>{S[key(cur,c.dataset.j)]=c.checked;save();prog();nav()});
+ $("mn").querySelectorAll(".qz").forEach(box=>{const q=m.quiz[+box.dataset.q];
+  box.querySelectorAll("button").forEach(b=>b.onclick=()=>{const ok=+b.dataset.i===q.answer;
+   box.querySelectorAll("button").forEach(x=>x.className="");b.className=ok?"r":"w";
+   box.querySelector("small").textContent=ok?"නිවැරදියි! 👏":"නැවත උත්සාහ කරන්න."})});
+ $("pv").onclick=()=>{cur--;location.hash="m"+(cur+1);render()};$("nx").onclick=()=>{cur++;location.hash="m"+(cur+1);render()};
+ nav();prog();window.scrollTo(0,0);}
+$("q").oninput=e=>{filter=e.target.value;if(M.length)nav()};
+$("th").onclick=()=>{const r=document.documentElement,l=getComputedStyle(r).getPropertyValue("--bg").trim()==="#f4f5f7";r.dataset.t=l?"d":"l"};
+init();
+</script>
+</body>
+</html>

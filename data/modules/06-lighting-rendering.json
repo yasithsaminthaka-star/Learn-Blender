@@ -1,0 +1,55 @@
+{
+  "id": "lighting-rendering",
+  "title": "Lighting සහ Rendering",
+  "summary": "ආලෝකය, camera සහ අවසන් පින්තූරය නිර්මාණය.",
+  "steps": [
+    "Light වර්ග: Point, Sun, Spot, Area",
+    "HDRI මගින් World lighting සැකසීම",
+    "Camera: Focal Length සහ Depth of Field",
+    "Eevee (වේගවත්) සහ Cycles (යථාර්ථවාදී) අතර වෙනස",
+    "Output: Resolution, Format (PNG/MP4), F12 මගින් Render"
+  ],
+  "shortcuts": [
+    {
+      "key": "F12",
+      "desc": "Render Image"
+    },
+    {
+      "key": "Ctrl+F12",
+      "desc": "Render Animation"
+    },
+    {
+      "key": "Numpad 0",
+      "desc": "Camera view"
+    },
+    {
+      "key": "Ctrl+Alt+Numpad 0",
+      "desc": "Camera view එකට align"
+    }
+  ],
+  "docs": [
+    {
+      "title": "Rendering",
+      "path": "render/index.html"
+    },
+    {
+      "title": "Cycles",
+      "path": "render/cycles/index.html"
+    },
+    {
+      "title": "EEVEE",
+      "path": "render/eevee/index.html"
+    }
+  ],
+  "quiz": [
+    {
+      "q": "Image එකක් render කිරීමට key එක?",
+      "options": [
+        "F3",
+        "F12",
+        "F5"
+      ],
+      "answer": 1
+    }
+  ]
+}

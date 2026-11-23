@@ -1,0 +1,47 @@
+{
+  "id": "compositing",
+  "title": "Compositing",
+  "summary": "Render කළ පින්තූරයට post-processing effects එක් කිරීම.",
+  "steps": [
+    "Compositing workspace එක විවෘත කර Compositor node tree එකක් සාදන්න",
+    "Render Layers සහ Image input nodes",
+    "Glare (bloom), Color Balance, Blur, Denoise nodes",
+    "Viewer node මගින් ප්‍රතිඵලය බලන්න",
+    "අවසන් output එක Composite/File Output node වෙත සම්බන්ධ කරන්න"
+  ],
+  "shortcuts": [
+    {
+      "key": "Shift+A",
+      "desc": "Node එකතු කරන්න"
+    },
+    {
+      "key": "Ctrl+G",
+      "desc": "Node Group සාදන්න"
+    },
+    {
+      "key": "Tab",
+      "desc": "Group එක තුළට/පිටතට"
+    }
+  ],
+  "docs": [
+    {
+      "title": "Compositing",
+      "path": "compositing/index.html"
+    },
+    {
+      "title": "Compositor",
+      "path": "editors/compositor.html"
+    }
+  ],
+  "quiz": [
+    {
+      "q": "Bloom/දිලිසෙන ආලෝක effect එක සඳහා node එක?",
+      "options": [
+        "Glare",
+        "Mix",
+        "Reroute"
+      ],
+      "answer": 0
+    }
+  ]
+}

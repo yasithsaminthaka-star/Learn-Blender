@@ -1,0 +1,59 @@
+{
+  "id": "geometry-nodes",
+  "title": "Geometry Nodes",
+  "summary": "Nodes මගින් procedural (ස්වයංක්‍රීය) මාදිලිකරණය.",
+  "steps": [
+    "Geometry Nodes workspace විවෘත කර New ඔබන්න",
+    "Group Input සහ Group Output nodes අතර data ගලා යාම",
+    "Distribute Points on Faces මගින් points ඇති කරන්න",
+    "Instance on Points මගින් objects (පිරිසිදු තණකොළ, ගස්) පුනරාවර්තනය",
+    "Realize Instances සහ Set Material භාවිතය"
+  ],
+  "shortcuts": [
+    {
+      "key": "Shift+A",
+      "desc": "Node එකතු කරන්න"
+    },
+    {
+      "key": "Ctrl+Shift+Click",
+      "desc": "Node Wrangler preview"
+    },
+    {
+      "key": "H",
+      "desc": "Node එක collapse කරන්න"
+    }
+  ],
+  "docs": [
+    {
+      "title": "Geometry Nodes",
+      "path": "modeling/geometry_nodes/index.html"
+    },
+    {
+      "title": "Fields",
+      "path": "modeling/geometry_nodes/fields.html"
+    },
+    {
+      "title": "Instances",
+      "path": "modeling/geometry_nodes/instances.html"
+    },
+    {
+      "title": "Instance on Points",
+      "path": "modeling/geometry_nodes/instances/instance_on_points.html"
+    },
+    {
+      "title": "Distribute Points on Faces",
+      "path": "modeling/geometry_nodes/point/distribute_points_on_faces.html"
+    }
+  ],
+  "quiz": [
+    {
+      "q": "Points මත objects පුනරාවර්තනය කරන node එක?",
+      "options": [
+        "Join Geometry",
+        "Instance on Points",
+        "Set Shade Smooth"
+      ],
+      "answer": 1
+    }
+  ]
+}

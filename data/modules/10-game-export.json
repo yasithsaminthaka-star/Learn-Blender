@@ -1,0 +1,47 @@
+{
+  "id": "game-export",
+  "title": "Game Asset Export (Unity)",
+  "summary": "Blender model එකක් Unity game එකට සූදානම් කිරීම.",
+  "steps": [
+    "Low-poly model සහ පිරිසිදු topology",
+    "Ctrl+A මගින් Scale සහ Rotation Apply කරන්න",
+    "UV සහ texture (PBR) සකස් කරන්න",
+    "File → Export → FBX හෝ glTF",
+    "Unity Assets folder එකට ඇද දමා Materials සම්බන්ධ කරන්න"
+  ],
+  "shortcuts": [
+    {
+      "key": "Ctrl+A",
+      "desc": "Apply Transform"
+    },
+    {
+      "key": "Alt+P",
+      "desc": "Parent clear"
+    },
+    {
+      "key": "Shift+D",
+      "desc": "Duplicate"
+    }
+  ],
+  "docs": [
+    {
+      "title": "Apply Transform",
+      "path": "scene_layout/object/editing/apply.html"
+    },
+    {
+      "title": "Triangulate Modifier",
+      "path": "modeling/modifiers/generate/triangulate.html"
+    }
+  ],
+  "quiz": [
+    {
+      "q": "Export කිරීමට පෙර Scale ස්ථාවර කිරීමට භාවිතා කරන්නේ?",
+      "options": [
+        "Ctrl+A (Apply)",
+        "Ctrl+J",
+        "Ctrl+R"
+      ],
+      "answer": 0
+    }
+  ]
+}

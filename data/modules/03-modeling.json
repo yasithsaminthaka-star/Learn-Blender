@@ -1,0 +1,72 @@
+{
+  "id": "modeling",
+  "title": "Modeling (Mesh)",
+  "summary": "Vertex, Edge, Face වලින් 3D හැඩතල නිර්මාණය.",
+  "steps": [
+    "Tab ඔබා Edit Mode එකට යන්න; 1 / 2 / 3 = Vertex / Edge / Face",
+    "Extrude (E) සහ Inset (I) මගින් හැඩය වර්ධනය කරන්න",
+    "Bevel (Ctrl+B) මගින් කොන් මෘදු කරන්න",
+    "Loop Cut (Ctrl+R) මගින් අමතර edge loops එක් කරන්න",
+    "Modifiers: Subdivision Surface, Mirror, Array, Boolean, Solidify",
+    "හොඳ topology: quads භාවිතා කරන්න, n-gons අවම කරන්න"
+  ],
+  "shortcuts": [
+    {
+      "key": "Tab",
+      "desc": "Object/Edit mode මාරුව"
+    },
+    {
+      "key": "E",
+      "desc": "Extrude"
+    },
+    {
+      "key": "I",
+      "desc": "Inset"
+    },
+    {
+      "key": "Ctrl+B",
+      "desc": "Bevel"
+    },
+    {
+      "key": "Ctrl+R",
+      "desc": "Loop Cut"
+    },
+    {
+      "key": "K",
+      "desc": "Knife"
+    },
+    {
+      "key": "Ctrl+1…5",
+      "desc": "Subdivision level"
+    }
+  ],
+  "docs": [
+    {
+      "title": "Meshes",
+      "path": "modeling/meshes/index.html"
+    },
+    {
+      "title": "Extrude Region",
+      "path": "modeling/meshes/tools/extrude_region.html"
+    },
+    {
+      "title": "Modifiers",
+      "path": "modeling/modifiers/index.html"
+    },
+    {
+      "title": "Subdivision Surface",
+      "path": "modeling/modifiers/generate/subdivision_surface.html"
+    }
+  ],
+  "quiz": [
+    {
+      "q": "Face එකක් පිටතට ඇදීමට (extrude) key එක?",
+      "options": [
+        "E",
+        "I",
+        "K"
+      ],
+      "answer": 0
+    }
+  ]
+}

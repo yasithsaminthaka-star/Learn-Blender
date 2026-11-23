@@ -1,0 +1,51 @@
+{
+  "id": "physics",
+  "title": "Physics Simulation",
+  "summary": "ස්වාභාවික චලනයන් (වැටීම, රෙදි, දියර) simulate කිරීම.",
+  "steps": [
+    "Rigid Body: Active (වැටෙන) සහ Passive (ස්ථාවර) objects",
+    "Cloth modifier: රෙදි; Vertex Group මගින් pin කරන්න",
+    "Fluid: Domain, Flow සහ Effector objects",
+    "Force Fields (Wind, Vortex) මගින් බලපෑම් එක් කරන්න",
+    "Simulation Cache: Frame Start/End සකසා Bake කරන්න"
+  ],
+  "shortcuts": [
+    {
+      "key": "Space",
+      "desc": "Play / Pause"
+    },
+    {
+      "key": "Shift+Left",
+      "desc": "Frame 1 වෙත"
+    },
+    {
+      "key": "Shift+A",
+      "desc": "Force Field එකතු කරන්න"
+    }
+  ],
+  "docs": [
+    {
+      "title": "Physics",
+      "path": "physics/index.html"
+    },
+    {
+      "title": "Cloth Modifier",
+      "path": "modeling/modifiers/physics/cloth.html"
+    },
+    {
+      "title": "Fluid Modifier",
+      "path": "modeling/modifiers/physics/fluid.html"
+    }
+  ],
+  "quiz": [
+    {
+      "q": "Fluid simulation එකේ දියර/දුම නිපදවන object වර්ගය?",
+      "options": [
+        "Flow",
+        "Mirror",
+        "Bevel"
+      ],
+      "answer": 0
+    }
+  ]
+}

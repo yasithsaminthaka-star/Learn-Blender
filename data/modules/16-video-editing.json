@@ -1,0 +1,47 @@
+{
+  "id": "video-editing",
+  "title": "Video Editing (Sequencer)",
+  "summary": "Blender තුළම video කපා සංස්කරණය කිරීම.",
+  "steps": [
+    "Video Editing workspace එක තෝරන්න",
+    "Shift+A මගින් Movie, Image, Sound strips එක් කරන්න",
+    "K මගින් strip එක කපන්න; G මගින් ගෙන යන්න",
+    "Transitions (Cross, Wipe) සහ Text strips",
+    "Output Properties → File Format: FFmpeg Video ලෙස render කරන්න"
+  ],
+  "shortcuts": [
+    {
+      "key": "Shift+A",
+      "desc": "Strip එකතු කරන්න"
+    },
+    {
+      "key": "K",
+      "desc": "Strip කපන්න"
+    },
+    {
+      "key": "G",
+      "desc": "Strip ගෙන යන්න"
+    }
+  ],
+  "docs": [
+    {
+      "title": "Video Sequencer",
+      "path": "editors/video_sequencer/index.html"
+    },
+    {
+      "title": "Blade Tool",
+      "path": "editors/video_sequencer/sequencer/toolbar/blade.html"
+    }
+  ],
+  "quiz": [
+    {
+      "q": "Video file එකක් ලෙස render කිරීමට file format එක?",
+      "options": [
+        "FFmpeg Video",
+        "OpenEXR",
+        "Bake"
+      ],
+      "answer": 0
+    }
+  ]
+}

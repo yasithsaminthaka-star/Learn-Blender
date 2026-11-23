@@ -1,0 +1,51 @@
+{
+  "id": "curves-text",
+  "title": "Curves සහ Text",
+  "summary": "Curve, Path සහ 3D අකුරු නිර්මාණය.",
+  "steps": [
+    "Curve වර්ග: Bézier, NURBS, Path; Handles පාලනය",
+    "Object Data → Geometry → Bevel Depth මගින් curve එකට ඝණකම දෙන්න",
+    "Curve එකක් path එකක් ලෙස animation වලට භාවිතා කිරීම (Follow Path)",
+    "Text object: Shift+A → Text; Tab ඔබා අකුරු ටයිප් කරන්න",
+    "Object → Convert → Mesh මගින් curve/text mesh බවට හරවන්න"
+  ],
+  "shortcuts": [
+    {
+      "key": "Shift+A",
+      "desc": "Curve/Text එකතු කරන්න"
+    },
+    {
+      "key": "Tab",
+      "desc": "Edit mode"
+    },
+    {
+      "key": "V",
+      "desc": "Handle type"
+    }
+  ],
+  "docs": [
+    {
+      "title": "Curves",
+      "path": "modeling/curves/index.html"
+    },
+    {
+      "title": "Curve Geometry",
+      "path": "modeling/curves/properties/geometry.html"
+    },
+    {
+      "title": "Text",
+      "path": "modeling/texts/index.html"
+    }
+  ],
+  "quiz": [
+    {
+      "q": "Curve එකකට ඝණකම (tube හැඩය) දෙන්නේ?",
+      "options": [
+        "Bevel Depth",
+        "Roughness",
+        "Frame Rate"
+      ],
+      "answer": 0
+    }
+  ]
+}

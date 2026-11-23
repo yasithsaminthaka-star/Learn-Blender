@@ -1,0 +1,59 @@
+{
+  "id": "animation-rigging",
+  "title": "Animation සහ Rigging",
+  "summary": "චලනය නිර්මාණය සහ character rig කිරීම.",
+  "steps": [
+    "Keyframe එකතු කිරීම (I) සහ Timeline භාවිතය",
+    "Graph Editor මගින් easing curves සකසන්න",
+    "Dope Sheet මගින් keyframes කළමනාකරණය",
+    "Armature (bones) එකතු කර Parent with Automatic Weights",
+    "Weight Paint සහ Inverse Kinematics (IK) පදනම්"
+  ],
+  "shortcuts": [
+    {
+      "key": "I",
+      "desc": "Keyframe ඇතුළත් කරන්න"
+    },
+    {
+      "key": "Space",
+      "desc": "Play / Pause"
+    },
+    {
+      "key": "Shift+Left",
+      "desc": "පළමු frame එකට"
+    },
+    {
+      "key": "Ctrl+P",
+      "desc": "Parent කරන්න"
+    }
+  ],
+  "docs": [
+    {
+      "title": "Animation",
+      "path": "animation/index.html"
+    },
+    {
+      "title": "Graph Editor",
+      "path": "editors/graph_editor/index.html"
+    },
+    {
+      "title": "Dope Sheet",
+      "path": "editors/dope_sheet/index.html"
+    },
+    {
+      "title": "Timeline",
+      "path": "editors/timeline.html"
+    }
+  ],
+  "quiz": [
+    {
+      "q": "Bones සහිත rig එකක් mesh එකට සම්බන්ධ කරන්නේ කෙසේද?",
+      "options": [
+        "Boolean",
+        "Parent with Automatic Weights",
+        "Bevel"
+      ],
+      "answer": 1
+    }
+  ]
+}

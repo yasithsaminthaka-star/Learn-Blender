@@ -1,0 +1,43 @@
+{
+  "id": "grease-pencil",
+  "title": "Grease Pencil (2D Animation)",
+  "summary": "3D අවකාශයේ 2D ඇඳීම සහ සජීවීකරණය.",
+  "steps": [
+    "Shift+A → Grease Pencil → Blank/Stroke මගින් object එකතු කරන්න",
+    "Draw mode (Tab) හි Draw, Fill, Erase tools",
+    "Layers සහ Materials (stroke/fill වර්ණ) කළමනාකරණය",
+    "Frames මගින් frame-by-frame animation; Onion Skinning",
+    "Line Art මගින් 3D model එකකින් ස්වයංක්‍රීයව රේඛා ඇඳීම"
+  ],
+  "shortcuts": [
+    {
+      "key": "Tab",
+      "desc": "Draw mode"
+    },
+    {
+      "key": "F",
+      "desc": "Brush size"
+    },
+    {
+      "key": "Ctrl+Z",
+      "desc": "Undo"
+    }
+  ],
+  "docs": [
+    {
+      "title": "Grease Pencil",
+      "path": "grease_pencil/index.html"
+    }
+  ],
+  "quiz": [
+    {
+      "q": "3D model එකකින් රේඛා චිත්‍රයක් ස්වයංක්‍රීයව ලබා දෙන්නේ?",
+      "options": [
+        "Line Art",
+        "Bake",
+        "Array"
+      ],
+      "answer": 0
+    }
+  ]
+}

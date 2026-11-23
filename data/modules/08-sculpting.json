@@ -1,0 +1,51 @@
+{
+  "id": "sculpting",
+  "title": "Sculpting",
+  "summary": "මැටි අච්චු කරන්නාක් මෙන් organic මාදිලි නිර්මාණය.",
+  "steps": [
+    "Sculpt Mode වෙත මාරු වන්න",
+    "Brushes: Draw, Clay Strips, Grab, Smooth, Crease",
+    "F = brush size, Shift+F = brush strength",
+    "Dyntopo හෝ Voxel Remesh මගින් detail එක් කරන්න",
+    "Multiresolution modifier භාවිතය"
+  ],
+  "shortcuts": [
+    {
+      "key": "F",
+      "desc": "Brush size"
+    },
+    {
+      "key": "Shift+F",
+      "desc": "Brush strength"
+    },
+    {
+      "key": "Ctrl (ඔබාගෙන)",
+      "desc": "Brush ප්‍රතිවිරුද්ධ ක්‍රියාව"
+    },
+    {
+      "key": "Shift (ඔබාගෙන)",
+      "desc": "Smooth brush"
+    }
+  ],
+  "docs": [
+    {
+      "title": "Sculpting & Painting",
+      "path": "sculpt_paint/index.html"
+    },
+    {
+      "title": "Multiresolution",
+      "path": "modeling/modifiers/generate/multiresolution.html"
+    }
+  ],
+  "quiz": [
+    {
+      "q": "Sculpt mode හි brush size වෙනස් කරන key එක?",
+      "options": [
+        "F",
+        "G",
+        "B"
+      ],
+      "answer": 0
+    }
+  ]
+}

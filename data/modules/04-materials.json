@@ -1,0 +1,47 @@
+{
+  "id": "materials",
+  "title": "Materials සහ Shading",
+  "summary": "Surface එකට වර්ණ, දිලිසීම සහ texture යෙදීම.",
+  "steps": [
+    "Material Properties හි New ඔබා Principled BSDF භාවිතා කරන්න",
+    "Base Color, Roughness, Metallic, Emission පාලනය",
+    "Shader Editor හි nodes සම්බන්ධ කිරීම (Shift+A)",
+    "Image Texture node මගින් පින්තූර යෙදීම",
+    "Normal Map සහ Bump මගින් විස්තර එක් කිරීම"
+  ],
+  "shortcuts": [
+    {
+      "key": "Shift+A",
+      "desc": "Node එකතු කරන්න"
+    },
+    {
+      "key": "Ctrl+T",
+      "desc": "Texture mapping nodes (Node Wrangler)"
+    },
+    {
+      "key": "Z",
+      "desc": "Viewport shading pie menu"
+    }
+  ],
+  "docs": [
+    {
+      "title": "Shader Editor",
+      "path": "editors/shader_editor.html"
+    },
+    {
+      "title": "Rendering",
+      "path": "render/index.html"
+    }
+  ],
+  "quiz": [
+    {
+      "q": "ලෝහමය පෙනුමක් ලබා ගැනීමට වැඩි කළ යුතු setting එක?",
+      "options": [
+        "Metallic",
+        "Alpha",
+        "IOR"
+      ],
+      "answer": 0
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "id": "uv-texturing",
+  "title": "UV Unwrapping සහ Texturing",
+  "summary": "3D model එකක් 2D texture එකකට සැකසීම.",
+  "steps": [
+    "Edit Mode හි edges තෝරා Mark Seam කරන්න",
+    "U ඔබා Unwrap කරන්න",
+    "UV Editor හි island එකිනෙක overlap නොවන සේ සකසන්න",
+    "Texture Paint mode මගින් model එක මත පින්තාරු කරන්න",
+    "Bake කිරීම (Normal, AO) – game assets සඳහා"
+  ],
+  "shortcuts": [
+    {
+      "key": "U",
+      "desc": "Unwrap menu"
+    },
+    {
+      "key": "A",
+      "desc": "සියල්ල select"
+    },
+    {
+      "key": "Ctrl+E",
+      "desc": "Edge menu (Mark Seam)"
+    }
+  ],
+  "docs": [
+    {
+      "title": "UVs",
+      "path": "modeling/meshes/uv/index.html"
+    },
+    {
+      "title": "Seams",
+      "path": "modeling/meshes/uv/unwrapping/seams.html"
+    },
+    {
+      "title": "UV Editor",
+      "path": "editors/uv/index.html"
+    }
+  ],
+  "quiz": [
+    {
+      "q": "UV unwrap කිරීමට පෙර සිදු කළ යුත්තේ?",
+      "options": [
+        "Render කිරීම",
+        "Seams සලකුණු කිරීම",
+        "Animation"
+      ],
+      "answer": 1
+    }
+  ]
+}

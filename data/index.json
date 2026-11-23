@@ -1,0 +1,26 @@
+{
+  "site": {
+    "title": "Blender සිංහලෙන් ඉගෙන ගනිමු",
+    "manualBase": "https://docs.blender.org/manual/en/latest/",
+    "manualLabel": "Blender Manual (5.3) – වැඩිපුර කියවන්න",
+    "footer": "අන්තර්ගතය Blender Manual (CC BY-SA 4.0) පදනම් කරගෙන සකස් කළ අධ්‍යාපනික සම්පතකි – docs.blender.org"
+  },
+  "modules": [
+    "modules/01-interface.json",
+    "modules/02-navigation.json",
+    "modules/03-modeling.json",
+    "modules/04-materials.json",
+    "modules/05-uv-texturing.json",
+    "modules/06-lighting-rendering.json",
+    "modules/07-animation-rigging.json",
+    "modules/08-sculpting.json",
+    "modules/09-geometry-nodes.json",
+    "modules/10-game-export.json",
+    "modules/11-objects-collections.json",
+    "modules/12-curves-text.json",
+    "modules/13-physics.json",
+    "modules/14-grease-pencil.json",
+    "modules/15-compositing.json",
+    "modules/16-video-editing.json"
+  ]
+}

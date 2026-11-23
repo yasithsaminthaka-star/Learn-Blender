@@ -1,0 +1,59 @@
+{
+  "id": "objects-collections",
+  "title": "Objects, Collections සහ Parenting",
+  "summary": "Scene එකේ objects සංවිධානය කිරීම සහ එකිනෙක සම්බන්ධ කිරීම.",
+  "steps": [
+    "Object වර්ග: Mesh, Curve, Light, Camera, Empty, Armature (Shift+A)",
+    "Collections: M ඔබා objects collection එකකට ගෙන යන්න; Outliner හි 👁 මගින් සඟවන්න",
+    "Parenting: පළමුව child, අවසානයට parent තෝරා Ctrl+P → Object",
+    "Duplicate (Shift+D) සහ Linked Duplicate (Alt+D) අතර වෙනස",
+    "Object Origin වෙනස් කිරීම: Object → Set Origin"
+  ],
+  "shortcuts": [
+    {
+      "key": "M",
+      "desc": "Collection එකකට ගෙන යන්න"
+    },
+    {
+      "key": "Ctrl+P",
+      "desc": "Parent සකසන්න"
+    },
+    {
+      "key": "Alt+D",
+      "desc": "Linked Duplicate"
+    },
+    {
+      "key": "H / Alt+H",
+      "desc": "සඟවන්න / පෙන්වන්න"
+    }
+  ],
+  "docs": [
+    {
+      "title": "Objects",
+      "path": "scene_layout/object/index.html"
+    },
+    {
+      "title": "Collections",
+      "path": "scene_layout/collections/index.html"
+    },
+    {
+      "title": "Parenting",
+      "path": "scene_layout/object/editing/parent.html"
+    },
+    {
+      "title": "Duplicate Linked",
+      "path": "scene_layout/object/editing/duplicate_linked.html"
+    }
+  ],
+  "quiz": [
+    {
+      "q": "Mesh data බෙදා ගනිමින් object එක duplicate කරන්නේ?",
+      "options": [
+        "Shift+D",
+        "Alt+D",
+        "Ctrl+J"
+      ],
+      "answer": 1
+    }
+  ]
+}
