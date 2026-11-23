@@ -29,6 +29,54 @@
     {
       "key": "Shift+C",
       "desc": "Cursor සහ view reset"
+    },
+    {
+      "key": "Numpad 1/3/7",
+      "desc": "Front / Right / Top (Ctrl සමඟ ප්‍රතිවිරුද්ධ පැත්ත)"
+    },
+    {
+      "key": "Numpad 5",
+      "desc": "Perspective / Orthographic"
+    },
+    {
+      "key": "Numpad /",
+      "desc": "Local View (තෝරාගත් object පමණක්)"
+    },
+    {
+      "key": "Home",
+      "desc": "සියලු objects view එකට ගන්න"
+    },
+    {
+      "key": "A / Alt+A",
+      "desc": "සියල්ල select / deselect"
+    },
+    {
+      "key": "B",
+      "desc": "Box select"
+    },
+    {
+      "key": "Ctrl+I",
+      "desc": "Selection invert"
+    },
+    {
+      "key": "Alt+G / Alt+R / Alt+S",
+      "desc": "Location / Rotation / Scale clear"
+    },
+    {
+      "key": "Shift+S",
+      "desc": "Snap pie menu (Cursor to Selected…)"
+    },
+    {
+      "key": "Shift+Tab",
+      "desc": "Snapping on/off"
+    },
+    {
+      "key": "O",
+      "desc": "Proportional Editing on/off"
+    },
+    {
+      "key": "Alt+Z",
+      "desc": "X-Ray on/off"
     }
   ],
   "docs": [

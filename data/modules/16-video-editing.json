@@ -21,6 +21,34 @@
     {
       "key": "G",
       "desc": "Strip ගෙන යන්න"
+    },
+    {
+      "key": "Shift+K",
+      "desc": "Hard cut"
+    },
+    {
+      "key": "Shift+D",
+      "desc": "Strip duplicate"
+    },
+    {
+      "key": "X",
+      "desc": "Strip delete"
+    },
+    {
+      "key": "H / Alt+H",
+      "desc": "Strip mute / unmute"
+    },
+    {
+      "key": "Ctrl+C / Ctrl+V",
+      "desc": "Strip copy / paste"
+    },
+    {
+      "key": "Home",
+      "desc": "සියලු strips පෙන්වන්න"
+    },
+    {
+      "key": "← / →",
+      "desc": "Frame 1 බැගින් ඉදිරියට/පසුපසට"
     }
   ],
   "docs": [

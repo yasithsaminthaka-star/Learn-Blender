@@ -21,6 +21,42 @@
     {
       "key": "Z",
       "desc": "Viewport shading pie menu"
+    },
+    {
+      "key": "X",
+      "desc": "Node delete"
+    },
+    {
+      "key": "Shift+D",
+      "desc": "Node duplicate"
+    },
+    {
+      "key": "F",
+      "desc": "තෝරාගත් nodes link කරන්න"
+    },
+    {
+      "key": "Ctrl+RMB drag",
+      "desc": "Links කපන්න"
+    },
+    {
+      "key": "M",
+      "desc": "Node mute"
+    },
+    {
+      "key": "H",
+      "desc": "Node collapse"
+    },
+    {
+      "key": "Ctrl+G",
+      "desc": "Node Group සාදන්න"
+    },
+    {
+      "key": "Ctrl+Shift+T",
+      "desc": "PBR textures එකවර load කරන්න (Node Wrangler)"
+    },
+    {
+      "key": "Shift+Z",
+      "desc": "Wireframe shading on/off"
     }
   ],
   "docs": [

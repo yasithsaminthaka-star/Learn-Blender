@@ -25,6 +25,26 @@
     {
       "key": "Shift (ඔබාගෙන)",
       "desc": "Smooth brush"
+    },
+    {
+      "key": "Ctrl+Z",
+      "desc": "Undo"
+    },
+    {
+      "key": "Ctrl+Shift+Z",
+      "desc": "Redo"
+    },
+    {
+      "key": "Ctrl+1…5",
+      "desc": "Multires / Subdivision level"
+    },
+    {
+      "key": "Alt+Z",
+      "desc": "X-Ray on/off"
+    },
+    {
+      "key": "Numpad .",
+      "desc": "තෝරාගත් කොටසට focus"
     }
   ],
   "docs": [

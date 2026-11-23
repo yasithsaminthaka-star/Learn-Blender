@@ -25,6 +25,30 @@
     {
       "key": "Ctrl+Alt+Numpad 0",
       "desc": "Camera view එකට align"
+    },
+    {
+      "key": "Shift+A",
+      "desc": "Light / Camera එකතු කරන්න"
+    },
+    {
+      "key": "F11",
+      "desc": "අවසන් Render window එක පෙන්වන්න"
+    },
+    {
+      "key": "Esc",
+      "desc": "Render නවත්වන්න"
+    },
+    {
+      "key": "Ctrl+B",
+      "desc": "Render Border සකසන්න (Camera view)"
+    },
+    {
+      "key": "Ctrl+Alt+B",
+      "desc": "Render Border ඉවත් කරන්න"
+    },
+    {
+      "key": "Z",
+      "desc": "Viewport Shading pie menu"
     }
   ],
   "docs": [

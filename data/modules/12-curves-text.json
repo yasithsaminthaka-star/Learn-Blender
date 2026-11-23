@@ -21,6 +21,26 @@
     {
       "key": "V",
       "desc": "Handle type"
+    },
+    {
+      "key": "E",
+      "desc": "Curve point extrude"
+    },
+    {
+      "key": "Ctrl+RMB",
+      "desc": "Cursor වෙත curve එක දිගු කරන්න (Edit Mode)"
+    },
+    {
+      "key": "Alt+C",
+      "desc": "Curve cyclic (වසා) on/off"
+    },
+    {
+      "key": "X",
+      "desc": "Delete menu"
+    },
+    {
+      "key": "Ctrl+B / Ctrl+I",
+      "desc": "Text Edit: Bold / Italic"
     }
   ],
   "docs": [

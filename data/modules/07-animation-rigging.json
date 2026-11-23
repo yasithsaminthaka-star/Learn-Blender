@@ -25,6 +25,46 @@
     {
       "key": "Ctrl+P",
       "desc": "Parent කරන්න"
+    },
+    {
+      "key": "Alt+I",
+      "desc": "Keyframe delete"
+    },
+    {
+      "key": "← / →",
+      "desc": "Frame 1 බැගින් ඉදිරියට/පසුපසට"
+    },
+    {
+      "key": "↑ / ↓",
+      "desc": "ඊළඟ / කලින් Keyframe වෙත"
+    },
+    {
+      "key": "Shift+Right",
+      "desc": "අවසන් frame වෙත"
+    },
+    {
+      "key": "Ctrl+Shift+Space",
+      "desc": "Reverse play"
+    },
+    {
+      "key": "T",
+      "desc": "Interpolation type (Graph/Dope Sheet)"
+    },
+    {
+      "key": "V",
+      "desc": "Handle type (Graph Editor)"
+    },
+    {
+      "key": "Ctrl+Tab",
+      "desc": "Armature: Pose Mode මාරුව"
+    },
+    {
+      "key": "Alt+G / Alt+R / Alt+S",
+      "desc": "Pose Mode: Bone transform clear"
+    },
+    {
+      "key": "Home",
+      "desc": "Timeline/Graph සම්පූර්ණ range පෙන්වන්න"
     }
   ],
   "docs": [

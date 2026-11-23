@@ -21,6 +21,30 @@
     {
       "key": "Ctrl+E",
       "desc": "Edge menu (Mark Seam)"
+    },
+    {
+      "key": "1 / 2 / 3",
+      "desc": "Vertex / Edge / Face select"
+    },
+    {
+      "key": "L / Ctrl+L",
+      "desc": "UV Island select (cursor යට / තෝරාගත්)"
+    },
+    {
+      "key": "P / Alt+P",
+      "desc": "UVs Pin / Unpin"
+    },
+    {
+      "key": "Ctrl+P",
+      "desc": "Pack Islands"
+    },
+    {
+      "key": "G / R / S",
+      "desc": "UV Move / Rotate / Scale"
+    },
+    {
+      "key": "Alt+A",
+      "desc": "UV සියල්ල deselect"
     }
   ],
   "docs": [

@@ -21,6 +21,26 @@
     {
       "key": "Ctrl+Z",
       "desc": "Undo"
+    },
+    {
+      "key": "Shift+F",
+      "desc": "Brush strength"
+    },
+    {
+      "key": "Ctrl+Tab",
+      "desc": "Mode pie menu"
+    },
+    {
+      "key": "← / →",
+      "desc": "Frame 1 බැගින් ඉදිරියට/පසුපසට"
+    },
+    {
+      "key": "A / Alt+A",
+      "desc": "Strokes සියල්ල select / deselect"
+    },
+    {
+      "key": "G / R / S",
+      "desc": "Strokes Move / Rotate / Scale"
     }
   ],
   "docs": [

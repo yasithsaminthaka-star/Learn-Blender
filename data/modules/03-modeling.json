@@ -38,6 +38,66 @@
     {
       "key": "Ctrl+1…5",
       "desc": "Subdivision level"
+    },
+    {
+      "key": "1 / 2 / 3",
+      "desc": "Vertex / Edge / Face select (Edit Mode)"
+    },
+    {
+      "key": "Alt+Click",
+      "desc": "Edge loop select"
+    },
+    {
+      "key": "F",
+      "desc": "Selected vertices/edges වලින් Face/Edge සාදන්න"
+    },
+    {
+      "key": "M",
+      "desc": "Merge menu"
+    },
+    {
+      "key": "X",
+      "desc": "Delete menu"
+    },
+    {
+      "key": "Ctrl+X",
+      "desc": "Dissolve (හැඩය නොනැසී delete)"
+    },
+    {
+      "key": "P",
+      "desc": "Separate (වෙනම object එකක් ලෙස)"
+    },
+    {
+      "key": "Ctrl+J",
+      "desc": "Objects එකට join කරන්න (Object Mode)"
+    },
+    {
+      "key": "Alt+E",
+      "desc": "Extrude menu"
+    },
+    {
+      "key": "V",
+      "desc": "Rip"
+    },
+    {
+      "key": "J",
+      "desc": "Vertices සම්බන්ධ කරන්න"
+    },
+    {
+      "key": "L / Ctrl+L",
+      "desc": "Linked select (cursor යට / තෝරාගත්)"
+    },
+    {
+      "key": "Ctrl+Numpad + / -",
+      "desc": "Selection වැඩි / අඩු කරන්න"
+    },
+    {
+      "key": "Ctrl+T",
+      "desc": "Triangulate"
+    },
+    {
+      "key": "Alt+H",
+      "desc": "Hidden සියල්ල පෙන්වන්න"
     }
   ],
   "docs": [

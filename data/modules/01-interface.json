@@ -25,6 +25,34 @@
     {
       "key": "Ctrl+S",
       "desc": "Save කරන්න"
+    },
+    {
+      "key": "Ctrl+Z",
+      "desc": "Undo"
+    },
+    {
+      "key": "Ctrl+Shift+Z",
+      "desc": "Redo"
+    },
+    {
+      "key": "F3",
+      "desc": "Menu search (ඕනෑම command එකක් සොයන්න)"
+    },
+    {
+      "key": "Shift+R",
+      "desc": "අවසන් ක්‍රියාව නැවත කරන්න"
+    },
+    {
+      "key": "F9",
+      "desc": "අවසන් ක්‍රියාවේ settings panel"
+    },
+    {
+      "key": "Ctrl+O",
+      "desc": "Open file"
+    },
+    {
+      "key": "Ctrl+PageUp / PageDown",
+      "desc": "Workspace මාරු කරන්න"
     }
   ],
   "docs": [

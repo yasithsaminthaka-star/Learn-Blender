@@ -21,6 +21,30 @@
     {
       "key": "Shift+D",
       "desc": "Duplicate"
+    },
+    {
+      "key": "Ctrl+J",
+      "desc": "Objects join කරන්න"
+    },
+    {
+      "key": "P",
+      "desc": "Edit Mode: Separate"
+    },
+    {
+      "key": "Shift+N",
+      "desc": "Normals නිවැරදි කරන්න (Recalculate Outside)"
+    },
+    {
+      "key": "Alt+N",
+      "desc": "Normals menu"
+    },
+    {
+      "key": "Alt+G / Alt+R / Alt+S",
+      "desc": "Location / Rotation / Scale clear"
+    },
+    {
+      "key": "Ctrl+L",
+      "desc": "Link/Transfer Data menu"
     }
   ],
   "docs": [

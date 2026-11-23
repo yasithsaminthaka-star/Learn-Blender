@@ -21,6 +21,22 @@
     {
       "key": "Shift+A",
       "desc": "Force Field එකතු කරන්න"
+    },
+    {
+      "key": "Esc",
+      "desc": "Playback නවත්වා frame 1 වෙත"
+    },
+    {
+      "key": "← / →",
+      "desc": "Frame 1 බැගින් ඉදිරියට/පසුපසට"
+    },
+    {
+      "key": "Shift+Right",
+      "desc": "අවසන් frame වෙත"
+    },
+    {
+      "key": "Alt+Z",
+      "desc": "X-Ray on/off"
     }
   ],
   "docs": [

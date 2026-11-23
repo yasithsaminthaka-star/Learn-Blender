@@ -25,6 +25,34 @@
     {
       "key": "H / Alt+H",
       "desc": "සඟවන්න / පෙන්වන්න"
+    },
+    {
+      "key": "Shift+M",
+      "desc": "Collection එකකට link කරන්න (copy නොවී)"
+    },
+    {
+      "key": "Shift+H",
+      "desc": "තෝරා නැති ඒවා සඟවන්න"
+    },
+    {
+      "key": "X",
+      "desc": "Delete"
+    },
+    {
+      "key": "Ctrl+J",
+      "desc": "Join"
+    },
+    {
+      "key": "Ctrl+L",
+      "desc": "Link/Transfer Data menu"
+    },
+    {
+      "key": "Alt+P",
+      "desc": "Parent clear menu"
+    },
+    {
+      "key": "Numpad /",
+      "desc": "Local View"
     }
   ],
   "docs": [

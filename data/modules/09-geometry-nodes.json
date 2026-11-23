@@ -21,6 +21,46 @@
     {
       "key": "H",
       "desc": "Node එක collapse කරන්න"
+    },
+    {
+      "key": "Tab",
+      "desc": "Node Group එක තුළට/පිටතට"
+    },
+    {
+      "key": "Ctrl+G",
+      "desc": "Node Group සාදන්න"
+    },
+    {
+      "key": "Ctrl+Alt+G",
+      "desc": "Node Group ungroup"
+    },
+    {
+      "key": "Ctrl+J",
+      "desc": "Nodes Frame එකකට දමන්න"
+    },
+    {
+      "key": "M",
+      "desc": "Node mute"
+    },
+    {
+      "key": "F",
+      "desc": "තෝරාගත් nodes link කරන්න"
+    },
+    {
+      "key": "Ctrl+RMB drag",
+      "desc": "Links කපන්න"
+    },
+    {
+      "key": "Home",
+      "desc": "සියලු nodes පෙන්වන්න"
+    },
+    {
+      "key": "X",
+      "desc": "Node delete"
+    },
+    {
+      "key": "Shift+D",
+      "desc": "Node duplicate"
     }
   ],
   "docs": [
